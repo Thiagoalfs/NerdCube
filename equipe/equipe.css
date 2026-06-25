@@ -1,0 +1,42 @@
+:root {
+    --border-color: #B971DA;
+}
+
+#container {
+    margin: 10px 100px 10px 100px;
+}
+
+.skin {
+    position: relative;
+    display: inline-block;
+}
+
+.skin:hover {
+    border: 1px solid var(--border-color);
+}
+
+.skin img {
+    max-width: 200px;
+    margin: 0px;
+    display: block;
+}
+
+.nametag-box {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
+    padding: 0px 26px 0px 14px;
+    line-height: 1;
+    margin: 0px;
+    position: absolute;
+    bottom: 14px;
+    left:0;
+}
+
+.skins-wrapper{
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}

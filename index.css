@@ -1,0 +1,15 @@
+#container {
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+}
+
+#left-content {
+    width: 50%;
+}
+
+#right-content {
+    width: 50%;
+    display:flex;
+    justify-content: center;
+}
