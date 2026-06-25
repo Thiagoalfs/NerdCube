@@ -1,5 +1,6 @@
 :root {
-    --border-color: #B971DA;
+    --border-color-2: #B971DA;
+    --border-color-1: #7DB9DF;
 }
 
 #container {
@@ -24,9 +25,10 @@
 .nametag-box {
     display: flex;
     align-items: center;
-    background-color: blue;
+    background: linear-gradient(to right, #4bb3f5, var(--border-color-1));;
     clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 50%, calc(100% - 20px) 100%, 0 100%);
-    padding: 0px 26px 0px 14px;
+    height: 28px;
+    padding: 0px 50px 0px 14px;
     line-height: 1;
     margin: 0px;
     position: absolute;
@@ -34,9 +36,26 @@
     left:0;
 }
 
+.nametag {
+    font-weight: 500;
+}
+
 .skins-wrapper{
     gap: 30px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
+}
+
+.equipe-header-color {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, var(--border-color-2), color-mix(in srgb, var(--border-color-1) 20%, transparent));
+}
+
+.equipe-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
 }
